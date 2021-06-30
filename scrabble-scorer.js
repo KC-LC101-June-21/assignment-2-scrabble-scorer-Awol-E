@@ -112,6 +112,11 @@ function scorerPrompt() {
   }
 }
 
+function getWord() {
+let word = input.question(" \n Enter a word to be scored, or 'stop' to quit:");
+return word.toLowerCase();
+}
+
 function transform(oldPointStructure){
 	 let newobje ={};
    for(let score in oldPointStructure)
